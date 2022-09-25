@@ -1,0 +1,17 @@
+using System;
+
+
+namespace project5 {
+    
+   class MainClass{
+  public static void Main(string[] args)
+  {
+    DateTime first = new DateTime(1890,5,23);
+    DateTime second = new DateTime(1870, 4, 22);
+    TimeSpan duration = first - second;
+    int days = (int) duration.TotalDays;
+    Console.WriteLine("Difference in {0} days", days);
+  }
+  
+ }
+}
