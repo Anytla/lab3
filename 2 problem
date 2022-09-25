@@ -1,0 +1,43 @@
+using System;
+
+
+namespace project2 {
+  class Person 
+{
+    public string name ;
+    public int age;
+
+     public Person ()
+    {
+        name = "Teddy";
+        age = 35;
+        Print();
+    }
+    
+    
+    public Person (string _name,int _age)
+    {
+        name = _name;
+        age = _age;
+        Print();
+    }
+    public void Print ()
+    {
+        Console.WriteLine($" {name} {age}");
+
+    }
+}
+
+
+   class MainClass{
+  public static void Main(string[] args) 
+  {
+     Person Teddy = new Person ();
+     Console.WriteLine();
+     Person Tom = new Person ("Tom",13);
+     Console.WriteLine();
+     
+     Console.ReadKey();
+  }
+}
+}
