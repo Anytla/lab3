@@ -1,0 +1,76 @@
+using System;
+
+
+namespace project2 {
+  class Family 
+{
+    public string name,name1,name2,name3 ;
+    public int age,age1,age2,age3;
+    public int sum=0 ;
+
+     public Family ()
+    {
+        name = "Teddy";
+        age = 35;
+    
+        name1 = "Tomas";
+        age1 = 12;
+    
+        name2 = "Teodor";
+        age2 = 56;
+   
+        name3 = "Tilda";
+        age3 = 23;
+       Print ();
+    }
+    
+    public void Print ()
+    {
+        Console.WriteLine($" {name} {age}");
+        Console.WriteLine($" {name1} {age1}");
+        Console.WriteLine($" {name2} {age2}");
+        Console.WriteLine($" {name3} {age3}");
+    }
+    
+    public void Sum()
+    {
+        sum = 4;
+        Console.WriteLine("  sum =  " +sum);
+    }
+    
+    public void GetMax()
+    {
+        if(age>age1&&age>age2&&age>age3)
+        {
+            Console.WriteLine($" {name} {age}");
+        }
+        if(age1>age&&age1>age2&&age1>age3)
+        {
+            Console.WriteLine($" {name1} {age1}");
+        }
+        if(age2>age&&age2>age1&&age2>age3)
+        {
+            Console.WriteLine($" {name2} {age2}");
+        }
+        else
+          Console.WriteLine($" {name3} {age3}");
+    }
+}
+
+
+   class MainClass{
+  public static void Main(string[] args) 
+  {
+    
+     Family Teddy = new Family();
+     Console.WriteLine();
+      Teddy.Sum();
+     Teddy.GetMax();
+
+     
+     Console.ReadKey();
+     
+  }
+}
+  
+}
